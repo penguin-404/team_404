@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tutorial -01</title>
+</head>
+
+<body>
+    <nav>
+        <a href="index.html" class="logo">logo</a>
+        <div class="nav-link" style="background-color: blue;">
+            <ul>
+                <li><a href="">HOME</a></li>
+                <li><a href="">ABOUT</a></li>
+                <li><a href="">RESOURCE</a></li>
+                <li><a href="">BLOG</a></li>
+                <li><a href="">CONTACT</a></li>
+
+            </ul>
+        </div>
+    </nav>
+    <div class="lab">
+        <h2 style="text-align: center;">LAB-TUTORIAL-01</h2>
+        <h3 style="text-align: center;">TOPIC:INTRODUCTION TO HDL</h3>
+        <div class="intro">
+            <p>In computer engineering, a hardware description language (HDL) is a specialized computer language used to
+                describe the structure and behavior of electronic circuits, and most commonly, digital logic circuits.
+
+                A hardware description language enables a precise, formal description of an electronic circuit that
+                allows for the automated analysis and simulation of an electronic circuit. It also allows for the
+                synthesis of an HDL description into a netlist (a specification of physical electronic components and
+                how they are connected together), which can then be placed and routed to produce the set of masks used
+                to create an integrated circuit.
+
+                A hardware description language looks much like a programming language such as C or ALGOL; it is a
+                textual description consisting of expressions, statements and control structures. One important
+                difference between most programming languages and HDLs is that HDLs explicitly include the notion of
+                time.</p>
+        </div>
+        <h3 style="padding:0 20px">PROCEDURE:</h5>
+            <div class="procedure">
+                <ul>
+                    <li>Open ModelSim Application</li>
+                    <li>Click Jumpstart</li>
+                    <li>Create a file and save it to your destination and give a new name to your filea and change its
+                        type from VHDL to Verilog</li>
+                    <li>In Left-hand side you will see the file you created.Now you need to create a tester file of that
+                        file.</li>
+                    <li>Now right click on the file you created and click on add new file and give it a name.</li>
+                    <li>Write the main code on the file and soft code on the tester file.</li>
+                </ul>
+            </div>
+            <div class="sample">
+                <h3 style="padding:5px 20px">SAMPLE PROGRAM:</h5>
+                    <h5 style="padding:0 20px">Main Program</h5>
+                    <ul>
+                        <li>module orgate(a,b,x)</li>
+                        <li>input a,b,x;</li>
+                        <li>output x;</li>
+                        <li>or g1(x,a,b)</li>
+                        <li>endmodule</li>
+                    </ul>
+                    <h5 style="padding:0 20px">Tester Program</h5>
+                    <ul>
+                        <li>module tester</li>
+                        <li>reg a,b;</li>
+                        <li>wire x;</li>
+                        <li>orgate org(a,b,x);</li>
+                        <li>initial</li>
+                        <li>begin</li>
+                        <li>a=1'b0; b=1'b0</li>
+                        <li>#20</li>
+                        <li>a=1'b0; b=1'b1</li>
+                        <li>#20</li>
+                        <li>a=1'b1; b=1'b0</li>
+                        <li>#20</li>
+                        <li>$finish;</li>
+                        <li>end</li>
+                        <li>endmodule</li>
+
+                    </ul>
+            </div>
+            <div class="data">
+                <h3 style="padding:0 20px">DATAFLOW DIAGRAM</h3>
+                <img src="images/Capture.JPG">
+            </div>
+            <div class="wave">
+                <h3 style="padding:0 20px">WAVEFLOW DIAGRAM</h3>
+                <img src="images/wave.png">
+            </div>
+            <div class="manual">
+                <h3 style="padding:20px 20px"><a href="PDFS\manual.pdf">LAB-MANUAL</a></h3>
+            </div>
+    </div>
+</body>
+</html>
